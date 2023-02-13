@@ -45,6 +45,34 @@ const generatePassword = () => {
     const passwordSpecialCharactersConfirm = confirm(
         "Include special characters?"
     );
+
+    if (passwordLowercaseConfirm) {
+        // add lowercase letters to passwordCharacters
+        passwordCharacters += passwordLowercase;
+    }
+
+    if (passwordUppercaseConfirm) {
+        // add uppercase letters to passwordCharacters
+        passwordCharacters += passwordUppercase;
+    }
+
+    if (passwordNumbersConfirm) {
+        // add numbers to passwordCharacters
+        passwordCharacters += passwordNumbers;
+    }
+
+    if (passwordSpecialCharactersConfirm) {
+        // add special characters to passwordCharacters
+        passwordCharacters += passwordSpecialCharacters;
+    }
+
+    if (passwordCharacters === "") {
+        // alert user if no character types were selected
+        alert(
+            "You must select at least one type of character to include in your password"
+        );
+        return; // return to prevent further execution
+    }
 };
 
 // Get references to the #generate element
