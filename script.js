@@ -1,15 +1,16 @@
 // Assignment code here
-const minimumPasswordLength = 8;
-const maximumPasswordLength = 128;
-let password = "";
-let passwordCharacters = "";
-const passwordLowercase = "abcdefghijklmnopqrstuvwxyz";
-const passwordUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const passwordNumbers = "0123456789";
-const passwordSpecialCharacters = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
-
 const generatePassword = () => {
     // This function generaes a password based on user input
+
+    // Declare variables
+    const minimumPasswordLength = 8;
+    const maximumPasswordLength = 128;
+    let password = "";
+    let passwordCharacters = "";
+    const passwordLowercase = "abcdefghijklmnopqrstuvwxyz";
+    const passwordUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const passwordNumbers = "0123456789";
+    const passwordSpecialCharacters = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
     // prompt user for password length
     let passwordLength = prompt("Set a password length? (8-128)");
