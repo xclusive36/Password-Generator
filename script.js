@@ -31,6 +31,20 @@ const generatePassword = () => {
         alert("Password Length must be between 8 and 128");
         return; // return to prevent further execution
     }
+
+    // confirm user wants to include lowercase letters
+    const passwordLowercaseConfirm = confirm("Include lowercase letters?");
+
+    // confirm user wants to include uppercase letters
+    const passwordUppercaseConfirm = confirm("Include uppercase letters?");
+
+    // confirm user wants to include numbers
+    const passwordNumbersConfirm = confirm("Include numbers?");
+
+    // confirm user wants to include special characters
+    const passwordSpecialCharactersConfirm = confirm(
+        "Include special characters?"
+    );
 };
 
 // Get references to the #generate element
