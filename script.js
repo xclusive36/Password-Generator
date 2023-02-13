@@ -73,6 +73,19 @@ const generatePassword = () => {
         );
         return; // return to prevent further execution
     }
+
+    for (let i = 0; i < passwordLength; i++) {
+        // For loop iterates through passwordLength.
+        // Each iteration, a random character is added to the password string
+
+        password += passwordCharacters.charAt(
+            // Adds a random character to the password string by using
+            // the javascript functions Math.floor and Math.random.
+            Math.floor(Math.random() * passwordCharacters.length)
+        );
+    }
+
+    return password; // returns the newly generated password string
 };
 
 // Get references to the #generate element
