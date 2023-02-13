@@ -1,21 +1,7 @@
-# User Story
-* AS AN employee with access to sensitive data
-* I WANT to randomly generate a password that meets certain criteria
-* SO THAT I can create a strong password that provides greater security
+# JavaScript Challenge: Password Generator
 
-#Acceptance Criteria
-* GIVEN I need a new, secure password
-* WHEN I click the button to generate a password
-* THEN I am presented with a series of prompts for password criteria
-* WHEN prompted for password criteria
-* THEN I select which criteria to include in the password
-* WHEN prompted for the length of the password
-* THEN I choose a length of at least 8 characters and no more than 128 characters
-* WHEN asked for character types to include in the password
-* THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-* WHEN I answer each prompt
-* THEN my input should be validated and at least one character type should be selected
-* WHEN all prompts are answered
-* THEN a password is generated that matches the selected criteria
-* WHEN the password is generated
-* THEN the password is either displayed in an alert or written to the page
+This project is all about working with JavaScript by developing a simple password generator. We were provided with a html and css template, and we were tasked with generating the JavaScript variables and function to complete the task.
+
+The web appplication generates a random password by asking the user to choose a password length between 8 and 128 characters. Once a password length has been set, the application asks the user more questions about what to include in the generated password. Should the generator include Lower case, Upper case characters? Should it include Numbers or Special characters?
+
+The Javascript converts the password length to a number, checks if the number is within 8 - 128 characters
