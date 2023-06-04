@@ -11,4 +11,4 @@ If all of the requirements have been met, the password generator function will g
 The randomly generated password is set to the dom set with the id tag password by running the function writePassword() via an addEventListener.
 
 ![Screenshot](./screen.png)
-[Link to working example](https://xclusive36.github.io/friendly-parakeet/)
+[Link to working example](https://xclusive36.github.io/Password-Generator/)
